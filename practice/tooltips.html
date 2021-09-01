@@ -128,20 +128,20 @@
       <main>
 
         <h2 class="text-muted mb-3">Tooltip for link</h2>
-        <a href="#">Tooltip for link</a>
+        <a href="#" data-toggle="tooltip" title="tooltip text">Tooltip for link</a>
 
         <h2 class="text-muted mt-5 mb-3">Tooltip for button</h2>
-        <button type="button" class="btn btn-primary">Tooltip for button</button>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" title="sometext">Tooltip for button</button>
 
         <h2 class="text-muted mt-5 mb-3">Tooltip with custom HTML</h2>
-        <button type="button" class="btn btn-primary">Tooltip with custom HTML</button>
+        <button type="button" class="btn btn-primary" data-html="true" data-toggle="tooltip" title="look its a <span class='badge badge-primary'>badge</span>">Tooltip with custom HTML</button>
 
         <h2 class="text-muted mt-5 mb-3">Different tooltip positions with "data-placement"</h2>
         <h2 class="text-muted mt-5 mb-3">Default is "top"</h2>
-        <button type="button" class="btn btn-secondary">Tooltip on top</button>
-        <button type="button" class="btn btn-info">Tooltip on right</button>
-        <button type="button" class="btn btn-warning">Tooltip on bottom</button>
-        <button type="button" class="btn btn-danger">Tooltip on left</button>
+        <button type="button" data-toggle="tooltip" data-placement="top" class="btn btn-secondary" title="another tooltip positioned">Tooltip on top</button>
+        <button type="button" data-toggle="tooltip" data-placement="right" class="btn btn-info" title="another tooltip positioned">Tooltip on right</button>
+        <button type="button" data-toggle="tooltip" data-placement="bottom" class="btn btn-warning" title="another tooltip positioned">Tooltip on bottom</button>
+        <button type="button" data-toggle="tooltip" data-placement="left" class="btn btn-danger" title="another tooltip positioned left but no space">Tooltip on left</button>
 
         <h2 class="text-muted mt-5 mb-3">Tooltip without animation</h2>
         <button type="button" class="btn btn-primary">Tooltip without animation</button>
@@ -150,7 +150,7 @@
         <button type="button" class="btn btn-primary">Tooltip with delay</button>
 
         <h2 class="text-muted mt-5 mb-3">Tooltip triggered by click only</h2>
-        <button type="button" class="btn btn-primary">Trigger by click</button>
+        <button type="button" class="btn btn-primary">Trigger by click data-trigger="click"</button>
 
         <h2 class="text-muted mt-5 mb-3">Tooltip with horizontal offset</h2>
         <button type="button" class="btn btn-primary">Tooltip with horizontal offset</button>
@@ -168,7 +168,7 @@
     <!-- Script that initialize all tooltips on a page -->
     <script type="text/javascript">
       $(function() {
-        
+        $('[data-toggle="tooltip"]').tooltip()
       })
     </script>
   </body>

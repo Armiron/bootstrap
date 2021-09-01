@@ -135,49 +135,61 @@
       <main>
 
         <h2 class="text-muted mb-3">Show and hide other content with link using the "href" attribute</h2>
-        <a href="#hrefCollapse" class="btn btn-primary">Link with href</a>
-        <div id="hrefCollapse">
+        <a href="#hrefCollapse" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="hrefCollapse">Link with href</a>
+        <div id="hrefCollapse" class="collapse">
           <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Show and hide other content with button using the "data-target" attribute</h2>
-        <button type="button" class="btn btn-primary">Button with data-target</button>
-        <div id="dataTargetCollapse">
+        <button type="button" 
+                class="btn btn-primary" 
+                data-toggle="collapse" 
+                data-target="#dataTargetCollapse" 
+                aria-expanded="false" 
+                aria-controls="dataTargetCollapse">
+                Button with data-target</button>
+        <div id="dataTargetCollapse" class="collapse">
           <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Multiple targets</h2>
-        <button type="button" class="btn btn-primary">Button with data-target</button>
-        <div id="multipleCollapse1">
+        <button type="button" 
+                class="btn btn-primary" 
+                data-toggle="collapse" 
+                data-target=".multiple-collapse" 
+                aria-expanded="false" 
+                aria-controls="multipleCollapse1 multipleCollapse2">
+                Button with data-target</button>
+        <div id="multipleCollapse1" class="collapse multiple-collapse">
           <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
         </div>
-        <div id="multipleCollapse2">
+        <div id="multipleCollapse2" class="collapse multiple-collapse">
           <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Accordion using the collapse component</h2>
-        <div id="accordion">
+        <div id="accordion" class="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">
-              <button>Heading One</button>
-            </div>
-            <div id="collapseOne">
+              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Heading One</button>
+            </div><!--add class show to make a default one showup at load-->
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero.</div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingTwo">
-              <button>Heading Two</button>
+              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Heading Two</button>
             </div>
-            <div id="collapseTwo">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
               <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero.</div>
             </div>
           </div>
           <div class="card">
             <div class="card-header" id="headingThree">
-              <button>Heading Three</button>
+              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Heading Three</button>
             </div>
-            <div id="collapseThree">
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero.</div>
             </div>
           </div>

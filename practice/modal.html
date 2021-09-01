@@ -128,23 +128,23 @@
       <main>
 
         <h2 class="text-muted mb-3">Link modal trigger</h2>
-        <a href="#">Open modal</a>
+        <a href="#modal">Open modal</a>
 
         <h2 class="text-muted mt-5 mb-3">Button modal trigger</h2>
         <button type="button" class="btn btn-primary">Open modal</button>
 
         <h2 class="text-muted mt-5 mb-3">Modal with header, body, footer and dismiss button</h2>
-        <button type="button" class="btn btn-primary">Open modal</button>
-        <div id="modal">
-          <div>
-            <div>
-              <div>
-                <h5 id="modalTitle">Modal title</h5>
-                <button type="button">
-                  &times;
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Open modal</button>
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 id="modalTitle" class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div>
+              <div class="modal-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
               </div>
               <div>

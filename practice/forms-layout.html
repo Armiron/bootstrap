@@ -131,7 +131,7 @@
         <h2 class="text-muted mb-3">Input sizes</h2>
         <div class="form-group">
           <label for="smFormInput">Small</label>
-          <input type="text" class="form-control" id="smFormInput" placeholder="Small input">
+          <input type="text" class="form-control form-control-sm" id="smFormInput" placeholder="Small input">
         </div>
         <div class="form-group">
           <label for="defaultFormInput">Default</label>
@@ -139,39 +139,39 @@
         </div>
         <div class="form-group">
           <label for="lgFormInput">Large</label>
-          <input type="text" class="form-control" id="lgFormInput" placeholder="Large input">
+          <input type="text" class="form-control form-control-lg" id="lgFormInput" placeholder="Large input">
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Form layout using grid classes</h2>
         <form>
-          <div>
-            <div>
+          <div class="row">
+            <div class="col">
               <div class="form-group">
                 <label for="gridFirstName">First name</label>
                 <input type="text" class="form-control" id="gridFirstName" placeholder="First name">
               </div>
             </div>
-            <div>
+            <div class="col">
               <div class="form-group">
                 <label for="gridLastName">Last name</label>
                 <input type="text" class="form-control" id="gridLastName" placeholder="Last name">
               </div>
             </div>
           </div>
-          <div>
-            <div>
+          <div class="row">
+            <div class="col-6">
               <div class="form-group">
                 <label for="gridAddress">Address</label>
                 <input type="text" class="form-control" id="gridAddress" placeholder="Address">
               </div>
             </div>
-            <div>
+            <div class="col-3">
               <div class="form-group">
                 <label for="gridZip">Zip</label>
                 <input type="number" class="form-control" id="gridZip" placeholder="1234">
               </div>
             </div>
-            <div>
+            <div class="col-3">
               <div class="form-group">
                 <label for="gridCountry">Country</label>
                 <select class="form-control" id="gridCountry">
@@ -187,34 +187,34 @@
 
         <h2 class="text-muted mt-5 mb-3">Compact form layout using grid classes</h2>
         <form>
-          <div>
-            <div>
+          <div class="form-row">
+            <div class="col">
               <div class="form-group">
                 <label for="compactFirstName">First name</label>
                 <input type="text" class="form-control" id="compactFirstName" placeholder="First name">
               </div>
             </div>
-            <div>
+            <div class="col-6">
               <div class="form-group">
                 <label for="compactLastName">Last name</label>
                 <input type="text" class="form-control" id="compactLastName" placeholder="Last name">
               </div>
             </div>
           </div>
-          <div>
-            <div>
+          <div class="form-row">
+            <div class="col-6">
               <div class="form-group">
                 <label for="compactAddress">Address</label>
                 <input type="text" class="form-control" id="compactAddress" placeholder="Address">
               </div>
             </div>
-            <div>
+            <div class="col-3">
               <div class="form-group">
                 <label for="compactZip">Zip</label>
                 <input type="number" class="form-control" id="compactZip" placeholder="1234">
               </div>
             </div>
-            <div>
+            <div class="col-3">
               <div class="form-group">
                 <label for="compactCountry">Country</label>
                 <select class="form-control" id="compactCountry">
@@ -230,22 +230,22 @@
 
         <h2 class="text-muted mt-5 mb-3">Horizontal form</h2>
         <form>
-          <div class="form-group">
-            <label for="horizontalInputEmail">Email</label>
-            <div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="horizontalInputEmail">Email</label>
+            <div class="col-sm-9">
               <input type="email" class="form-control" id="horizontalInputEmail" placeholder="Email">
             </div>
           </div>
-          <div class="form-group">
-            <label for="horizontalInputPassword">Password</label>
-            <div>
+          <div class="form-group row">
+            <label for="horizontalInputPassword" class="col-sm-3 col-form-label" >Password</label>
+            <div class="col-sm-9">
               <input type="password" class="form-control" id="horizontalInputPassword" placeholder="Password">
             </div>
           </div>
           <fieldset class="form-group">
-            <div>
-              <legend>Radios</legend>
-              <div>
+            <div class="row">
+              <legend class="col-sm-3 col-form-label pt-0">Radios</legend>
+              <div class="col-sm-9">
                 <div class="form-check">
                   <input type="radio" class="form-check-input" name="horizontalRadios" id="horizontalRadios1" value="option1" checked>
                   <label class="form-check-label" for="horizontalRadios1">Option one is this</label>
@@ -261,29 +261,29 @@
               </div>
             </div>
           </fieldset>
-          <div class="form-group">
-            <div>Checkbox</div>
-            <div>
+          <div class="form-group row">
+            <div class="col-sm-3">Checkbox</div>
+            <div class="col-sm-9">
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="horizontalCheckbox">
                 <label class="form-check-label" for="horizontalCheckbox">Check me out</label>
               </div>
             </div>
           </div>
-          <div class="form-group">
-            <div>
+          <div class="form-group row">
+            <div class="offset-sm-3 col-sm-9">
               <button type="submit" class="btn btn-primary">Sign in</button>
             </div>
           </div>
         </form>
 
         <h2 class="text-muted mt-5 mb-3">Inline forms (for small devices and larger)</h2>
-        <form>
-          <label for="inlineInputOne">Name</label>
-          <input type="text" class="form-control" id="inlineInputOne" placeholder="Name">
-          <label for="inlineInputTwo">Username</label>
-          <input type="text" class="form-control" id="inlineInputTwo" placeholder="Username">
-          <div class="form-check">
+        <form class="form-inline">
+          <label for="inlineInputOne" class="sr-only">Name</label>
+          <input type="text" class="form-control mr-2" id="inlineInputOne" placeholder="Name">
+          <label for="inlineInputTwo" class="sr-only" mr-2>Username</label>
+          <input type="text" class="form-control mr-2" id="inlineInputTwo" placeholder="Username">
+          <div class="form-check mr-2">
             <input type="checkbox" class="form-check-input" id="inlineCheckbox">
             <label class="form-check-label" for="inlineCheckbox">Remember me</label>
           </div>

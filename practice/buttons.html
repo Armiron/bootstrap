@@ -128,76 +128,76 @@
       <main>
 
         <h2 class="text-muted mb-3">Standard button styles</h2>
-        <button>Primary</button>
-        <button>Secondary</button>
-        <button>Success</button>
-        <button>Danger</button>
-        <button>Warning</button>
-        <button>Info</button>
-        <button>Light</button>
-        <button>Dark</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
         
         <h2 class="text-muted mt-5 mb-3">A button with the style of a link</h2>
-        <button>Link</button>
+        <button class="btn btn-primary" role="button">Link</button>
 
         <h2 class="text-muted mt-5 mb-3">Standard button styles applied to &lt;a&lt; and &gt;input&gt; elements</h2>
-        <a href="#">Link</a>
-        <input type="button" value="Input">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <a href="#" class="btn btn-primary" role="button">Link</a>
+        <input type="button" class="btn btn-success" value="Input">
+        <input type="submit" class="btn btn-danger" value="Submit">
+        <input type="reset"  class="btn btn-warning"value="Reset">
 
         <h2 class="text-muted mt-5 mb-3">Outline button styles without background-color</h2>
-        <button>Primary</button>
-        <button>Secondary</button>
-        <button>Success</button>
-        <button>Danger</button>
-        <button>Warning</button>
-        <button>Info</button>
-        <button class="bg-dark">Light</button>
-        <button>Dark</button>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light bg-dark">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
 
         <h2 class="text-muted mt-5 mb-3">Buttons in different sizes</h2>
-        <button>Small</button>
-        <button>Default</button>
-        <button>Large</button>
-        <button>Small Block</button>
-        <button>Default Block</button>
-        <button>Large block</button>
+        <button type="button" class="btn btn-sm btn-primary">Small</button>
+        <button type="button" class="btn btn-primary">Default</button>
+        <button type="button" class="btn btn-lg btn-primary">Large</button>
+        <button type="button" class="btn btn-block btn-sm btn-primary">Small Block</button>
+        <button type="button" class="btn btn-block btn-primary">Default Block</button>
+        <button type="button" class="btn btn-block btn-lg btn-primary">Large block</button>
 
         <h2 class="text-muted mt-5 mb-3">Active state</h2>
-        <button>Not active</button>
-        <button>Active</button>
+        <button type="button" class="btn btn-primary" disabled>Not active</button>
+        <button type="button" class="btn btn-primary">Active</button>
 
         <h2 class="text-muted mt-5 mb-3">Disabled state</h2>
-        <button>Disabled</button>
-        <a href="#">Disabled</a>
+        <button type="button" class="btn btn-secondary" disabled>Disabled</button>
+        <a class="btn btn-secondary disabled" href="#">Disabled</a>
 
         <h2 class="text-muted mt-5 mb-3">Toggle state</h2>
-        <button>Active</button>
-        <button>Not active</button>
+        <button type="button" class="btn">Active</button>
+        <button type="button" class="btn">Not active</button>
 
         <h2 class="text-muted mt-5 mb-3">Checkboxes styled as buttons</h2>
-        <div>
-          <label>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-info">
             <input type="checkbox"> Checkbox 1
           </label>
-          <label>
+          <label class="btn btn-info active">
             <input type="checkbox" checked> Checkbox 2 (pre-checked)
           </label>
-          <label>
+          <label class="btn btn-info">
             <input type="checkbox"> Checkbox 3
           </label>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Radio buttons styled as buttons</h2>
-        <div>
-          <label>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-success">
             <input type="radio" name="options" id="option1"> Radio 1
           </label>
-          <label>
+          <label class="btn btn-success">
             <input type="radio" name="options" id="option2"> Radio 2
           </label>
-          <label>
+          <label class="btn btn-success active">
             <input type="radio" name="options" id="option3" checked> Radio 3 (pre-selected)
           </label>
         </div>

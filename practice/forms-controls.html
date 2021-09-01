@@ -130,62 +130,62 @@
 
         <h2 class="text-muted mb-3">Wrapper for input fields</h2>
         <form>
-          <div>
+          <div class="form-group">
             <label for="example-input">Example</label>
-            <input type="text" placeholder="Example" id="example-input">
+            <input type="text" placeholder="Example" id="example-input" id="example-input">
           </div>
         </form>
 
         <h2 class="text-muted mt-5 mb-3">Text input types</h2>
-        <div>
+        <div class="form-group">
           <label for="example-text-input">Text</label>
           <input type="text" placeholder="Example text input" id="example-text-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-search-input">Search</label>
           <input type="search" placeholder="Example search input" id="example-search-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-email-input">Email</label>
           <input type="email" placeholder="example@email.com" id="example-email-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-url-input">URL</label>
           <input type="url" placeholder="https://exampleurl.com" id="example-url-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-tel-input">Telephone</label>
           <input type="tel" placeholder="0123456789" id="example-tel-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-password-input">Password</label>
           <input type="password" placeholder="examplepassword" id="example-password-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-number-input">Number</label>
           <input type="number" placeholder="1234" id="example-number-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-datetime-local-input">Date and time</label>
           <input type="datetime-local" id="example-datetime-local-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-date-input">Date</label>
           <input type="date" id="example-date-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-month-input">Month</label>
           <input type="month" id="example-month-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-week-input">Week</label>
           <input type="week" id="example-week-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-time-input">Time</label>
           <input type="time" id="example-time-input">
         </div>
-        <div>
+        <div class="form-group">
           <label for="example-color-input">Color</label>
           <input type="color" id="example-color-input">
         </div>
@@ -197,9 +197,9 @@
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Select</h2>
-        <div>
+        <div class="form-group">
           <label for="example-select-one">Select one</label>
-          <select id="example-select-one">
+          <select id="example-select-one" class="form-control">
             <option selected>Select</option>
             <option value="1">Option one</option>
             <option value="2">Option two</option>
@@ -208,7 +208,7 @@
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Select multiple</h2>
-        <div>
+        <div class="form-group">
           <label for="example-select-multiple">Select multiple</label>
           <select multiple id="example-select-multiple">
             <option value="1">1</option>
@@ -218,43 +218,43 @@
         </div>
 
         <h2 class="text-muted mt-5 mb-3">File input</h2>
-        <div>
+        <div class="form-group">
           <label for="example-input-file">File input</label>
-          <input type="file" id="example-input-file">
+          <input type="file" class="form-control-file" id="example-input-file">
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Range input</h2>
-        <div>
+        <div class="form-group">
           <label for="example-input-range">Range input</label>
-          <input type="range" id="example-input-range">
+          <input type="range" class="form-control-range" id="example-input-range">
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Stacked checkboxes</h2>
-        <div>
-          <input type="checkbox" id="exampleCheckbox1" value="optionOne">
+        <div class="form-check"> <!--theres an inline option-->
+          <input type="checkbox" id="exampleCheckbox1" value="optionOne" class="form-check-input">
           <label for="exampleCheckbox1">Option one</label>
         </div>
-        <div>
-          <input type="checkbox" id="exampleCheckbox2" value="optionTwo">
+        <div class="form-check">
+          <input type="checkbox" id="exampleCheckbox2" value="optionTwo" class="form-check-input">
           <label for="exampleCheckbox2">Option two</label>
         </div>
-        <div>
-          <input type="checkbox" id="exampleCheckbox3" value="optionThree" disabled>
+        <div class="form-check">
+          <input type="checkbox" id="exampleCheckbox3" value="optionThree" disabled class="form-check-input">
           <label for="exampleCheckbox3">Option three is disabled</label>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Inline checkboxes</h2>
-        <div>
-          <input type="checkbox" id="exampleCheckbox1" value="optionOne">
-          <label for="exampleCheckbox1">Option one</label>
+        <div class="form-ceck form-check-inline">
+          <input type="checkbox" id="exampleCheckbox1" value="optionOne" class="form-ceck-input">
+          <label class="form-ceck-label" for="exampleCheckbox1">Option one</label>
         </div>
-        <div>
-          <input type="checkbox" id="exampleCheckbox2" value="optionTwo">
-          <label for="exampleCheckbox2">Option two</label>
+        <div class="form-ceck form-check-inline">
+          <input type="checkbox" id="exampleCheckbox2" value="optionTwo" class="form-ceck-input">
+          <label class="form-ceck-label" for="exampleCheckbox2">Option two</label>
         </div>
         <div class="form-check form-check-inline disabled">
-          <input type="checkbox" id="exampleCheckbox3" value="optionThree" disabled>
-          <label for="exampleCheckbox3">Option three is disabled</label>
+          <input type="checkbox" id="exampleCheckbox3" value="optionThree" disabled class="form-ceck-input">
+          <label class="form-ceck-label" for="exampleCheckbox3">Option three is disabled</label>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Checkbox without label</h2>
@@ -326,19 +326,19 @@
         </form>
 
         <h2 class="text-muted mt-5 mb-3">Custom checkbox</h2>
-        <div>
-          <input type="checkbox" id="checkboxCustom" value="customCheckbox">
-          <label for="checkboxCustom">Custom checkbox</label>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="checkboxCustom" value="customCheckbox">
+          <label for="checkboxCustom" class="custom-control-label">Custom checkbox</label>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Custom radio buttons</h2>
-        <div>
-          <input type="radio" id="radioCustom1" name="radioCustom" value="optionOne">
-          <label for="radioCustom1">Custom radio 1</label>
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="radioCustom1" name="radioCustom" value="optionOne">
+          <label for="radioCustom1" class="custom-control-label">Custom radio 1</label>
         </div>
-        <div>
-          <input type="radio" id="radioCustom2" name="radioCustom" value="optionTwo">
-          <label for="radioCustom2">Custom radio 2</label>
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="radioCustom2" name="radioCustom" value="optionTwo">
+          <label for="radioCustom2" class="custom-control-label">Custom radio 2</label>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Disabled custom checkbox</h2>
@@ -386,9 +386,9 @@
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Custom switch</h2>
-        <div>
-          <input type="checkbox" id="switchCustom" value="customSwitch">
-          <label for="switchCustom">Custom switch</label>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="switchCustom" value="customSwitch">
+          <label for="switchCustom" class="custom-control-label">Custom switch</label>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Disabled switch</h2>
@@ -431,36 +431,36 @@
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Custom range: 0-100 (default)</h2>
-        <div>
-          <label for="customRange1">Custom range</label>
-          <input id="customRange1">
+        <div class="form-group">
+          <label for="customRange1" >Custom range</label>
+          <input type="range" class="custom-range" id="customRange1">
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Custom range: 1-10</h2>
-        <div>
+        <div class="form-group">
           <label for="customRange2">Custom range</label>
-          <input id="customRange2">
+          <input type="range" class="custom-range" min="0" max="10" id="customRange2">
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Custom range: 1-10 (0.5 step)</h2>
-        <div>
+        <div class="form-group">
           <label for="customRange3">Custom range</label>
-          <input id="customRange3">
+          <input type="range" class="custom-range" min="1" max="10" step="0.5" id="customRange3">
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Custom file browser</h2>
-        <div>
-          <div>
-            <input type="file" id="example-file-custom">
-            <label for="example-file-custom">Custom file browser</label>
+        <div class="form-group">
+          <div class="custom-file">
+            <input type="file" id="example-file-custom" class="custom-file-input">
+            <label class="custom-file-label" for="example-file-custom">Custom file browser</label>
           </div>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Custom file browser with custom button text</h2>
-        <div>
-          <div>
-            <input type="file" id="example-file-custom-button">
-            <label for="example-file-custom-button">Custom file browser</label>
+        <div class="form-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="example-file-custom-button">
+            <label for="example-file-custom-button" class="custom-file-label" data-browse="Select File">Custom file browser</label>
           </div>
         </div>
 

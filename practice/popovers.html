@@ -135,16 +135,16 @@
       <main>
 
         <h2 class="text-muted mb-3">Popover for link</h2>
-        <a href="#">Popover for link</a>
+        <a href="#" data-toggle="popover" data-content="sdfh ksd hksg hksg hks gks hkh gkh gk hgskj hgskjhdgf kjsh">Popover for link</a>
 
         <h2 class="text-muted mt-5 mb-3">Popover for button</h2>
-        <button type="button" class="btn btn-info">Popover for button</button>
+        <button type="button" class="btn btn-info" data-toggle="popover" data-trigger="focus" data-content=" breyu eyrbu yherbguy baugrba klryugbek aueryhg baueryhgv bakeuryhgb ">Popover for button</button>
 
         <h2 class="text-muted mt-5 mb-3">Popover with title</h2>
-        <button type="button" class="btn btn-info">Popover with title</button>
+        <button type="button" class="btn btn-info" data-toggle="popover" data-trigger="hover" title="Popover Title" data-content="hjkjahg fjhg akjhfgk suyakshf akuyg akueyg kaeuyfk aeyufg">Popover with title</button>
 
         <h2 class="text-muted mt-5 mb-3">Popover with custom HTML</h2>
-        <button type="button" class="btn btn-info">Popover with custom HTML</button>
+        <button type="button" data-placement="top" data-animation="false" class="btn btn-info" data-html="true" data-toggle="popover" title="<span class='badge badge-primary'>Random Title</span>" data-content="<strong>Hello</strong> there">Popover with custom HTML</button>
 
         <h2 class="text-muted mt-5 mb-3">Different popover positions with "data-placement"</h2>
         <button type="button" class="btn btn-info">Popover on top</button>
@@ -180,6 +180,7 @@
     <!-- Script that initialize all popovers on a page -->
     <script type="text/javascript">
       $(function() {
+        $('[data-toggle="popover"]').popover()
         
       })
     </script>

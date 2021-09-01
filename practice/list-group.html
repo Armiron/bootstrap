@@ -128,12 +128,12 @@
       <main>
 
         <h2 class="text-muted mb-3">List group</h2>
-        <ul>
-          <li>List group item one</li>
-          <li>List group item two</li>
-          <li>List group item three</li>
-          <li>List group item four</li>
-          <li>List group item five</li>
+        <ul class="list-group">
+          <li class="list-group-item">List group item one</li>
+          <li class="list-group-item">List group item three</li>
+          <li class="list-group-item">List group item four</li>
+          <li class="list-group-item">List group item two</li>
+          <li class="list-group-item">List group item five</li>
         </ul>
 
         <h2 class="text-muted mt-5 mb-3">List group with active item</h2>
@@ -298,19 +298,19 @@
         <h2 class="text-muted mt-5 mb-3">Tab panels</h2>
         <div class="row">
           <div class="col-4">
-            <div id="nav-tabList">
-              <a href="#list-home" id="list-home-list">Home</a>
-              <a href="#list-profile" id="list-profile-list">Profile</a>
-              <a href="#list-messages" id="list-messages-list">Messages</a>
-              <a href="#list-settings" id="list-settings-list">Settings</a>
+            <div class="list-group" id="nav-tabList" role="tablist">
+              <a href="#list-home" role="tab" aria-controls="home" id="list-home-list" class="list-group-item list-group-item-action active" data-toggle="list">Home</a>
+              <a href="#list-profile" role="tab" aria-controls="profile" id="list-profile-list" class="list-group-item list-group-item-action " data-toggle="list">Profile</a>
+              <a href="#list-messages" role="tab" aria-controls="messages" id="list-messages-list" class="list-group-item list-group-item-action " data-toggle="list">Messages</a>
+              <a href="#list-settings" role="tab" aria-controls="settings" id="list-settings-list" class="list-group-item list-group-item-action " data-toggle="list">Settings</a>
             </div>
           </div>
           <div class="col-8">
-            <div id="nav-tabContent">
-              <div id="list-home">Home: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</div>
-              <div id="list-profile">Profile: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</div>
-              <div id="list-messages">Messages: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</div>
-              <div id="list-settings">Settings: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</div>
+            <div id="nav-tabContent" class="tab-content">
+              <div id="list-home" class="tab-pane show active" role="tabpanel" aria-labelledby="list home">Home: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</div>
+              <div id="list-profile" class="tab-pane " role="tabpanel" aria-labelledby="list profile">Profile: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</div>
+              <div id="list-messages" class="tab-pane " role="tabpanel" aria-labelledby="list messages">Messages: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</div>
+              <div id="list-settings" class="tab-pane " role="tabpanel" aria-labelledby="list settings">Settings: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</div>
             </div>
           </div>
         </div>

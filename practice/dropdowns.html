@@ -142,12 +142,18 @@
       <main>
 
         <h2 class="text-muted mb-3">Dropdown with a button toggle</h2>
-        <div>
-          <button type="button" class="btn btn-secondary" id="dropdownMenuButton">Dropdown button</button>
-          <div>
-            <a href="#">First item</a>
-            <a href="#">Second item</a>
-            <a href="#">Third item</a>
+        <div class="dropdown">
+          <button type="button" 
+                  class="btn btn-secondary dropdown-toggle" 
+                  id="dropdownMenuButton" 
+                  data-toggle="dropdown" 
+                  aria-haspopup="true" 
+                  aria-expanded="false">
+          Dropdown button</button>
+          <div class="dropdown-menu" aria-labelledby="dropdown">
+            <a href="#" class="dropdown-item">First item</a>
+            <a href="#" class="dropdown-item">Second item</a>
+            <a href="#" class="dropdown-item">Third item</a>
           </div>
         </div>
 
@@ -183,12 +189,23 @@
 
         <h2 class="text-muted mt-5 mb-3">Dropdown with split button design</h2>
         <div class="btn-group">
-          <button type="button" class="btn btn-secondary">Dropdown split button</button>
-          <button type="button" class="btn btn-secondary" id="dropdownSplitButton"><span>Toggle dropdown</span></button>
-          <div>
-            <a href="#">First item</a>
-            <a href="#">Second item</a>
-            <a href="#">Third item</a>
+          <button type="button" class="btn btn-secondary">Dropdown</button>
+          <button type="button" 
+            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+            id="dropdownSplitButton" 
+            data-toggle="dropdown" 
+            aria-haspopup="true" 
+            aria-expanded="false">
+              <span class="sr-only">Toggle dropdown</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdown">
+            <h5 class="dropdown-header">Dropdown Header</h5>
+            <div class="dropdown-divider"></div>
+            <span class="dropdown-item-text">some text</span>
+            <a href="#" class="dropdown-item">First item</a>
+            
+            <a href="#" class="dropdown-item">Second item</a>
+            <a href="#" class="dropdown-item">Third item</a>
           </div>
         </div>
 

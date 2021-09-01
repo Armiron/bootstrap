@@ -14,11 +14,12 @@
     <style type="text/css">
       body {
         padding-top: 42px;
+        position: relative;
       }
     </style>
   </head>
   <!-- Data attributes that initializes a scrollspy on a page -->
-  <body>
+  <body ><!--data-spy="scroll" data-target="#navScrollspy"-->
     
     <header>
       <div class="navbar navbar-expand-lg navbar-light bg-light">
@@ -136,15 +137,15 @@
       <main>
 
         <h2 class="text-muted mb-3">Scrollspy</h2>
-        <ul>
-          <li>
-            <a href="#sectionFirst">First section</a>
+        <ul class="nav nav-tabs fixed-top" id="navScrollspy">
+          <li class="nav-item">
+            <a class="nav-link" href="#sectionFirst">First section</a>
           </li>
-          <li>
-            <a href="#sectionSecond">Second section</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#sectionSecond">Second section</a>
           </li>
-          <li>
-            <a href="#sectionThird">Third section</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#sectionThird">Third section</a>
           </li>
         </ul>
         <div id="sectionFirst">
@@ -187,7 +188,9 @@
     <!-- Script that initializes a scrollspy on a page -->
     <script type="text/javascript">
       $(function() {
- 
+        $('body').scrollspy({
+          target: '#navScrollspy'
+        })
       })
     </script>
   </body>

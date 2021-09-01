@@ -136,8 +136,42 @@
     <main>
 
       <h2 class="text-muted mb-3">Navbar</h2>
-      <nav></nav>
-
+      <nav>
+        <div class="navbar navbar-expand-md navbar-light bg-light">
+          <a href="#" class="navbar-brand">
+            <img src="../img/40x40.png" alt="Logo">NavBar
+          </a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarMenuLink" data-toggle="dropdown">Dropdown</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Dropdown item</a>
+                  <a href="#" class="dropdown-item">Dropdown item</a>
+                  <a href="#" class="dropdown-item">Dropdown item</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled">Link</a>
+              </li>
+            </ul>
+            <form class="form-inline">
+              <div class="input-group">
+                <span class="input-group-prepend input-group-text" id="hashtag">#</span>
+                <input type="text" class="form-control" placeholder="Search">
+                <button type="submit" class="btn btn-dark">Search</button>
+              </div>
+            </form>
+            <span class="navbar-text">This is some random text</span>
+          </div>
+        </div>
+    </nav>
       <h2 class="text-muted mt-5 mb-3">Navbar brand with a link</h2>
       <nav>
         <a href="#">Navbar</a>

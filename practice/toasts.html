@@ -129,84 +129,84 @@
 
         <h2 class="text-muted mb-3">Basic toast (default options and behavior)</h2>
         <p>Delay = 500 ms, auto-hide = true, animation = true</p>
-        <div>
-          <div>
+        <div class="toast" role="alert">
+          <div class="toast-header">
             <strong class="mr-auto">Toast header</strong>
             <small>9 minutes ago</small>
           </div>
-          <div>Toast body text goes here.</div>
+          <div class="toast-body">Toast body text goes here.</div>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Basic toast (with 3000 ms delay)</h2>
         <p>Delay = 3000 ms, auto-hide = true, animation = true</p>
-        <div>
-          <div>
+        <div class="toast" role="alert" data-delay="3000">
+          <div class="toast-header" >
             <strong class="mr-auto">Toast header</strong>
             <small>9 minutes ago</small>
           </div>
-          <div>Toast body text goes here.</div>
+          <div class="toast-body">Toast body text goes here.</div>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Basic toast (without autohide)</h2>
         <p>Delay = n/a, auto-hide = false, animation = true</p>
-        <div>
-          <div>
+        <div class="toast" role="alert" data-autohide="false" data-animation="true">
+          <div class="toast-header">
             <strong class="mr-auto">Toast header</strong>
             <small>9 minutes ago</small>
-            <button type="button" class="close ml-2 mb-1" aria-label="Close">
+            <button type="button" class="close ml-2 mb-1" aria-label="Close" data-dismiss="toast">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div>Toast body text goes here.</div>
+          <div class="toast-body">Toast body text goes here.</div>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Basic toast (without autohide and animation)</h2>
         <p>Delay = n/a, auto-hide = false, animation = false</p>
-        <div>
-          <div>
+        <div class="toast" role="alert" data-autohide="false" data-animation="false">
+          <div class="toast-header">
             <strong class="mr-auto">Toast header</strong>
             <small>9 minutes ago</small>
-            <button type="button" class="close ml-2 mb-1" aria-label="Close">
+            <button type="button" class="close ml-2 mb-1" aria-label="Close" data-dismiss="toast">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div>Toast body text goes here.</div>
+          <div class="toast-body">Toast body text goes here.</div>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Toasts are translucent</h2>
         <div class="bg-dark p-3">
-          <div>
-            <div>
+          <div class="toast" role="alert" data-autohide="false">
+            <div class="toast-header">
               <strong class="mr-auto">Toast header</strong>
               <small>9 minutes ago</small>
-              <button type="button" class="close ml-2 mb-1" aria-label="Close">
+              <button type="button" class="close ml-2 mb-1" aria-label="Close" data-dismiss="toast">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div>Toast body text goes here.</div>
+            <div class="toast-body">Toast body text goes here.</div>
           </div>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Multiple toasts stacks vertically</h2>
-        <div>
-          <div>
+        <div class="toast" role="alert" data-autohide="false">
+          <div class="toast-header">
             <strong class="mr-auto">Toast header</strong>
             <small>9 minutes ago</small>
-            <button type="button" class="close ml-2 mb-1" aria-label="Close">
+            <button type="button" class="close ml-2 mb-1" aria-label="Close" data-dismiss="toast">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div>Toast body text goes here.</div>
+          <div class="toast-body">Toast body text goes here.</div>
         </div>
-        <div>
-          <div>
+        <div class="toast" role="alert" data-autohide="false">
+          <div class="toast-header">
             <strong class="mr-auto">Toast header</strong>
             <small>9 minutes ago</small>
-            <button type="button" class="close ml-2 mb-1" aria-label="Close">
+            <button type="button" class="close ml-2 mb-1" aria-label="Close" data-dismiss="toast">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div>Toast body text goes here.</div>
+          <div class="toast-body">Toast body text goes here.</div>
         </div>
 
         <h2 class="text-muted mt-5 mb-3">Alignment and placement</h2>
@@ -219,7 +219,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
-      $('.toast')
+      $('.toast').toast('show') 
     </script>
   </body>
 </html>
