@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Survey – Questions</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="js/fontawesome-all.min.js"></script>
+  </head>
+  <body class="bg-light py-3 py-lg-5">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="display-4">Survey Name</h1>
+        <p class="lead">Subtitle for the Survey Name</p>
+      </div>
+      <ul class="nav nav-tabs nav-justified" id="nav" role="tablist">
+        <li class="nav-item">
+          <a href="#step-1" class="nav-link h4 mb-0 active" id="step-1-tab" data-toggle="tab" role="tab" aria-controls="step-1" aria-selected="true">Step 1<br><small class="d-none d-md-inline">Personal Info</small></a>
+        </li>
+        <li class="nav-item">
+          <a href="#step-2" class="nav-link h4 mb-0" id="step-2-tab" data-toggle="tab" role="tab" aria-controls="step-2" aria-selected="false">Step 2<br><small class="d-none d-md-inline">Questions w/answers</small></a>
+        </li>
+        <li class="nav-item">
+          <a href="#step-3" class="nav-link h4 mb-0" id="step-3-tab" data-toggle="tab" role="tab" aria-controls="step-3" aria-selected="false">Step 3<br><small class="d-none d-md-inline">Questions w/ratings</small></a>
+        </li>
+      </ul>
+      <div class="tab-content" id="navContent">
+        <div class="tab-pane fade pt-4 show active" id="step-1" role="tabpanel" aria-labelledby="step-1-tab">
+          <div class="form-row">
+          	<div class="col-md-3 form-group">
+          		<label>Sex:</label>
+          		<div>
+          			<div class="form-check form-check-inline">
+          				<input type="radio" class="form-check-input" name="sex" id="sex-male" value="male">
+          				<label class="form-check-label" for="sex-male">Male</label>
+          			</div>
+          			<div class="form-check form-check-inline">
+          				<input type="radio" class="form-check-input" name="sex" id="sex-female" value="female">
+          				<label class="form-check-label" for="sex-female">Female</label>
+          			</div>
+          		</div>
+          	</div>
+          	<div class="col-md-3 form-group">
+          		<label for="age">Age:</label>
+          		<input type="number" class="form-control" id="age">
+          	</div>
+          	<div class="col-md-6 form-group">
+          		<label for="phone">Phone:</label>
+          		<input type="tel" class="form-control" id="phone">
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-md-6 form-group">
+          		<label for="name">Name:</label>
+          		<input type="text" class="form-control" id="name" placeholder="Firstname Lastname">
+          	</div>
+          	<div class="col-md-6 form-group">
+          		<label for="email">Email:</label>
+          		<input type="email" class="form-control" id="email" placeholder="username@domain.com">
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-md-9 form-group">
+          		<label for="address">Address:</label>
+          		<input type="text" class="form-control" id="address" placeholder="1234 Grand Avenue">
+          	</div>
+          	<div class="col-md-3 form-group">
+          		<label for="apartment">Apartment or floor:</label>
+          		<input type="text" class="form-control" id="apartment" placeholder="B3, 4th Floor, or similar">
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-md-6 form-group">
+          		<label for="city">City:</label>
+          		<input type="text" class="form-control" id="city" placeholder="City">
+          	</div>
+          	<div class="col-md-2 form-group">
+          		<label for="zip">Zip:</label>
+          		<input type="number" class="form-control" id="zip" placeholder="1234">
+          	</div>
+          	<div class="col-md-4 form-group">
+          		<label for="country">Country:</label>
+          		<select id="country" class="form-control">
+          			<option value="" selected>- Select Country -</option>
+          			<option value="Denmark">Denmark</option>
+          			<option value="Finland">Finland</option>
+          			<option value="Norway">Norway</option>
+          			<option value="Sweden">Sweden</option>
+          		</select>
+          	</div>
+          </div>
+          <button type="button" class="btn btn-outline-secondary btn-lg d-block ml-auto" id="goto-step-2">Step 2</button>
+        </div>
+        <div class="tab-pane fade pt-4" id="step-2" role="tabpanel" aria-labelledby="step-2-tab">
+        </div>
+        <div class="tab-pane fade pt-4" id="step-3" role="tabpanel" aria-labelledby="step-3-tab">
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
